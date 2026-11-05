@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Mono, DM_Sans, Geist, Geist_Mono } from "next/font/google";
+import { DM_Mono, DM_Sans, Geist, Geist_Mono, Google_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/nav/nav";
 import { ThemeProvider } from "next-themes";
@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 });
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"]
+});
+
+const gSans = Google_Sans({
+  variable: "--font-gSans",
   subsets: ["latin"],
   weight: ["400", "500", "700"]
 });
@@ -39,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${dmMono.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${dmMono.variable} ${gSans.variable}`}
       >
         {/*<Nav />*/}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

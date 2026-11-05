@@ -2,11 +2,24 @@ import ThemeToggle from "./components/theme/themeBtn";
 import Link from "next/link";
 import TerminalCopy from "./components/terminalCopy";
 import Nav from "./components/nav/nav";
+import { SDSButton } from "@son-ds/react";
 export default function Home() {
   return (
     <div>
       <div className="dark_wrapper">
-          <Nav />
+        <Nav />
+        <div className="rd_hero">
+          <div className="box"></div>
+          <div className="box main_box">
+            <h1>Son Design System</h1>
+            <p>Minimalistic design system for all developers.</p>
+            {/*<Link href="/" className="btn">Get Started</Link>*/}
+            <SDSButton variant="primary" rounded={true}>Get Started</SDSButton>
+
+          </div>
+          <div className="box"></div>
+        </div>
+        {/*redesign*/}
         <div className="hero">
         <h1 className="hero_heading">son-ds</h1>
         <p>A modern design system for building beautiful interfaces.</p>
