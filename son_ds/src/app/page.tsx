@@ -1,10 +1,13 @@
 import ThemeToggle from "./components/theme/themeBtn";
 import Link from "next/link";
 import TerminalCopy from "./components/terminalCopy";
+import Nav from "./components/nav/nav";
 export default function Home() {
   return (
     <div>
-      <div className="hero">
+      <div className="dark_wrapper">
+          <Nav />
+        <div className="hero">
         <h1 className="hero_heading">son-ds</h1>
         <p>A modern design system for building beautiful interfaces.</p>
         <div className="cta-row">
@@ -76,6 +79,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
       </div>
       <div className="terminal">
         <div className="terminal-header">
@@ -92,7 +96,6 @@ export default function Home() {
         </div>
       </div>
 
-      <ThemeToggle />
     </div>
   );
 }

@@ -1,15 +1,23 @@
 import Link from "next/link";
 import styles from "./nav.module.css";
 import Image from "next/image";
+import ThemeToggle from "../theme/themeBtn";
 
 const Nav: React.FC = () => (
   <nav className={styles.nav}>
-    <div className={styles.logo}>
-      <Image src="/logo-border.svg" width={31} height={31} alt="Son Logo" />
-      <span>son-ds</span>
-      <span>testing new branch</span>
+
+    <div className={styles.menu}>
+      <div className={styles.logo}>
+        <Image src="/logo-border.svg" width={31} height={31} alt="Son Logo" />
+      </div>
+      <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
     </div>
-    <ul className={styles.menu}>
+    <ThemeToggle />
+
+    {/*<ul className={styles.menu}>
       <li>
         <Link href="/">Home</Link>
       </li>
@@ -24,7 +32,7 @@ const Nav: React.FC = () => (
           Components
         </Link>
       </li>
-    </ul>
+    </ul>*/}
   </nav>
 );
 
