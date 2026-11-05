@@ -1,8 +1,6 @@
 import ThemeToggle from "./components/theme/themeBtn";
 import Link from "next/link";
 import TerminalCopy from "./components/terminalCopy";
-// tersting components in ui
-import Btn from "./components/test_components/btn";
 export default function Home() {
   return (
     <div>
@@ -19,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bento-container">
-        <div className="bento-tile tile-main has-glow glow-blue">
+        <div className="bento-tile tile-main">
           <div className="tile-content">
             <div>
               <h3>Ultra Lightweight</h3>
@@ -41,7 +39,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bento-tile tile-wide has-glow glow-purple">
+        <div className="bento-tile tile-wide">
           <div className="tile-content">
             <div>
               <h3>Built for Modernity</h3>
@@ -53,10 +51,7 @@ export default function Home() {
                   <span className="dot"></span> React
                 </span>
                 <span className="pill-small pill-green">
-                  <span className="dot"></span> Vue
-                </span>
-                <span className="pill-small pill-yellow">
-                  <span className="dot"></span> Svelte
+                  <span className="dot"></span> NextJS
                 </span>
               </div>
             </div>
