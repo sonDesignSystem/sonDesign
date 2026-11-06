@@ -70,8 +70,32 @@ a {
 
 .rd_hero {
     width: 100%;
-    background-color: red;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+    .box {
+        margin-top: 0;
+        width: 25%;
+    }
+
+    .main_box {
+        border-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 30%;
+        padding: 3rem 2rem;
+        gap: 20px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+    p {
+        font-size: 26px;
+    }
 }
 
 .hero {

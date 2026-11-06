@@ -14,7 +14,7 @@ export default function Home() {
             <h1>Son Design System</h1>
             <p>Minimalistic design system for all developers.</p>
             {/*<Link href="/" className="btn">Get Started</Link>*/}
-            <SDSButton variant="primary" rounded={true}>Get Started</SDSButton>
+            <SDSButton variant="primary" size="lg" rounded={true}>Get Started</SDSButton>
 
           </div>
           <div className="box"></div>
