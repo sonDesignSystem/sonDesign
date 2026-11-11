@@ -11,10 +11,11 @@ export default function Home() {
         <div className="rd_hero">
           <div className="box"></div>
           <div className="box main_box">
+            <div className="hero_content">
             <h1>Son Design System</h1>
-            <p>Minimalistic design system for all developers.</p>
-            {/*<Link href="/" className="btn">Get Started</Link>*/}
-            <SDSButton variant="primary" size="lg" rounded={true}>Get Started</SDSButton>
+              <p>Minimalistic design system for all developers.</p>
+            </div>
+            <SDSButton variant="primary" background={"#FFB107"} size="lg" rounded={true} className="hero_button">Get Started</SDSButton>
 
           </div>
           <div className="box"></div>
