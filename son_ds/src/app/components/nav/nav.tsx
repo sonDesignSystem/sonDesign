@@ -4,7 +4,7 @@ import Image from "next/image";
 import ThemeToggle from "../theme/themeBtn";
 
 const Nav: React.FC = () => (
-  <nav className={styles.nav}>
+    <nav className={styles.nav}>
 
     <div className={styles.menu}>
       <div className={styles.logo}>
@@ -33,7 +33,7 @@ const Nav: React.FC = () => (
         </Link>
       </li>
     </ul>*/}
-  </nav>
+    </nav>
 );
 
 export default Nav;
